@@ -52,8 +52,3 @@ One of the most popular way is reactive TTL. i.e., when user asks for a key, it'
 In here, Psuedo proactive method is used. During any call to cache, we check if there are any keys to be expired and it is deleted. 
 To achieve this one, a min heap is used where comparison is on TTL. Top of the heap denotes the node which has to be expired at the earliest. 
 As C++ STL priority queue does not support random erase, the STL is extended to support the functionality
-
-### Additional tools
-For doubly linked list, we have created a new custom templatized class, which expose required functionalities
-
-More details explained [Here](https://medium.com/@ksholla20/design-and-implement-a-caching-library-e456b0f6449f)
